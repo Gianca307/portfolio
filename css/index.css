@@ -1,0 +1,18 @@
+.bloque #inicio{
+    height: 100vh;
+    width: 100vw;
+}
+
+.bloque #inicio main{
+    margin-top: 27vh;
+}
+
+.bloque #sobre_mi{
+    height: 100vh;
+    width: 100vw;
+}
+
+.bloque #mis_trabajo{
+    height: 100vh;
+    width: 100vw;
+}
