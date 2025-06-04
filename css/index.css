@@ -1,10 +1,38 @@
-.bloque #inicio{
-    height: 100vh;
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.bloque{
     width: 100vw;
 }
 
+.bloque #inicio{
+    height: 100%;
+    width: 100%;
+}
+
+.bloque #inicio main div a{
+    background-color: black;
+    color: white;
+}
+
+.bloque #inicio main div a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange !important;
+}
+
 .bloque #inicio main{
-    margin-top: 27vh;
+    height: 100%;
+    width: 100%;
 }
 
 .bloque #sobre_mi{
@@ -13,6 +41,17 @@
 }
 
 .bloque #mis_trabajo{
-    height: 100vh;
+    min-height: 50vh;
     width: 100vw;
+}
+
+.bloque #contacto{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+footer{
+    height: 15vh;
+    background-color: black;
+    color: white;
 }
