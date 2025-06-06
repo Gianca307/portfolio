@@ -1,10 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 body, html{
     margin: 0;
     padding: 0;
 }
 
 .bloque{
-    width: 100vw;
+    width: 100%;
 }
 
 .bloque #inicio{
