@@ -44,6 +44,14 @@ body, html{
     width: 100vw;
 }
 
+#mis_proyectos .mis_proyectos-contenedor div {
+    transition: scale 0.2s linear;
+}
+
+#mis_proyectos .mis_proyectos-contenedor div:hover{
+    scale: 1.05;
+}
+
 #experiencia div .lista_experiencias{
     flex-direction: column;
     gap: 2rem;
@@ -83,4 +91,11 @@ footer{
     #contacto .formulario .form_google iframe{
         width: 320px;
     }
+}
+
+/* ANIMACIONES */
+
+@keyframes movimientoCard{
+    from {scale: 1;}
+    to {scale: 1.1;}
 }
