@@ -7,21 +7,22 @@ body, html{
     padding: 0;
 }
 
-.bloque{
-    width: 100%;
+.titulo{
+    color: orange;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.bloque #inicio{
+#inicio{
     height: 100%;
     width: 100%;
 }
 
-.bloque #inicio main div a{
+#inicio main div a{
     background-color: black;
     color: white;
 }
 
-.bloque #inicio main div a:hover{
+#inicio main div a:hover{
     background-color: orange;
     color: black;
 }
@@ -34,28 +35,52 @@ body, html{
     color: orange !important;
 }
 
-.bloque #inicio main{
-    height: 100%;
-    width: 100%;
-}
-
-.bloque #sobre_mi{
+#sobre_mi{
     height: 100vh;
-    width: 100vw;
 }
 
-.bloque #mis_proyectos{
+#mis_proyectos{
     min-height: 80vh;
     width: 100vw;
 }
 
-.bloque #contacto{
+#experiencia div .lista_experiencias{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#experiencia div .lista_experiencias li{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+
+    border-color: orange;
+}
+
+#contacto{
     min-height: 100vh;
     width: 100vw;
 }
 
 footer{
-    height: 15vh;
+    min-height: 15vh;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 780px){
+    #contacto .lista_contacto{
+        flex-direction: column;
+    }
+    
+    #contacto .formulario .form_google iframe{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #contacto .formulario .form_google iframe{
+        width: 320px;
+    }
 }
